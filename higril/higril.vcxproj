@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6E7B1CA1-FCA7-46E0-8C86-723194834FA3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>higril</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D "_AFXDLL" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="baiscobj.cpp" />
+    <ClCompile Include="bsipic.cpp" />
+    <ClCompile Include="DealUartData.cpp" />
+    <ClCompile Include="DrawGrp.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="GLFont.cpp" />
+    <ClCompile Include="MDIWin.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="OpenGL.cpp" />
+    <ClCompile Include="queue.cpp" />
+    <ClCompile Include="Serial.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="baiscobj.h" />
+    <ClInclude Include="bsipic.h" />
+    <ClInclude Include="Chart.h" />
+    <ClInclude Include="Classless.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="DealUartData.h" />
+    <ClInclude Include="DrawGrp.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="GLFont.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="OpenGL.h" />
+    <ClInclude Include="queue.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Serial.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="higril.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\gameopengl\BasicVision\Debug\Togusa.ico" />
+    <Image Include="..\..\..\gameopengl\higrilcopy\data\aa.bmp" />
+    <Image Include="..\..\..\gameopengl\higrilcopy\data\bb.BMP" />
+    <Image Include="..\..\higrilcopy\data\aa.bmp" />
+    <Image Include="..\..\higrilcopy\data\bb.BMP" />
+    <Image Include="..\data\aa.bmp" />
+    <Image Include="..\data\bb.BMP" />
+    <Image Include="..\Debug\Togusa.ico" />
+    <Image Include="data\after.bmp" />
+    <Image Include="data\before.bmp" />
+    <Image Include="data\down.bmp" />
+    <Image Include="data\Left.bmp" />
+    <Image Include="data\right .bmp" />
+    <Image Include="data\right.bmp" />
+    <Image Include="data\up.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource.hm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="higril.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
